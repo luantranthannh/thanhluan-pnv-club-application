@@ -1,0 +1,139 @@
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px dashed palevioletred;
+}
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin: 4px 0;
+    padding: 4px;
+
+}
+.form-group .title-label {
+    min-width: 200px;
+    text-align: right;
+    padding-right: 14px;
+
+}
+.form-group #fullname {
+    width: 400px;
+    padding: 6px;
+    outline: none;
+}
+.form-group #club {
+    width: 410px;
+    padding: 6px;
+    outline: none;
+
+}
+.form-group .radio-group
+ {
+   display: flex;
+    flex-wrap: wrap;
+}
+.form-group .radio-group > div
+ {
+   margin:2px;
+
+}
+.form-group .checkbox-group {
+ 
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.form-group .checkbox-group >div {
+   width: 150px;
+   margin:2px;
+}
+
+button {
+    width: 100%;
+    background-color: orangered;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+   
+}
+
+
+
+.form-group input[type="radio"] {
+    display: none; 
+}
+
+
+.form-group input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+}
+
+
+.form-group input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black; 
+    background-color: #fff;
+    border-radius: 50%; 
+    box-sizing: border-box;
+}
+
+
+.form-group input[type="radio"]:checked + label:before {
+    background-color: #f90; 
+}
+
+
+
+div input[type="checkbox"] {
+    display: none;
+}
+
+
+ input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px; 
+    cursor: pointer;
+}
+
+
+ input[type="checkbox"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #333;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+
+ input[type="checkbox"]:checked + label:before {
+    background-color: orangered; }
+
+div input[type="checkbox"]:checked + label {
+    border: none;
+}
